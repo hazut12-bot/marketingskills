@@ -121,6 +121,7 @@ See each skill's **Related Skills** section for the full dependency map.
 | [referrals](skills/referrals/) | When the user wants referral and affiliate programs or word of mouth, or asks what to reward, how much to pay, or which... |
 | [reverse-engineer-marketing](skills/reverse-engineer-marketing/) | When the user wants to know how another company grew and what to copy, or asks what a competitor did and when: a dated... |
 | [revops](skills/revops/) | When the user wants to design revenue operations, or asks when a lead is ready for sales or why sales and marketing... |
+| [rtl-hebrew-docs](skills/rtl-hebrew-docs/) | When the user wants a Hebrew (RTL) document as PDF, Word, or slides: price proposals (הצעת מחיר), contracts, meeting... |
 | [sales-enablement](skills/sales-enablement/) | When the user wants sales collateral, or asks what to give a champion or rep, or how to answer an objection or make the... |
 | [schema](skills/schema/) | When the user wants to add, fix, or validate schema markup (JSON-LD), or asks which type fits a page or whether some... |
 | [seo-audit](skills/seo-audit/) | When the user wants to audit or diagnose SEO, or asks why traffic dropped, a page won't rank, or whether a setup like... |
@@ -375,6 +376,7 @@ You can also invoke skills directly:
 ### Sales & RevOps
 - `revops` - Lead lifecycle, scoring, routing, pipeline management
 - `sales-enablement` - Sales decks, one-pagers, objection docs, demo scripts
+- `rtl-hebrew-docs` - Hebrew RTL proposals, contracts, minutes, and decks as PDF, Word, or slides
 
 ## Related Libraries
 
