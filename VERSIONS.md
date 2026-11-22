@@ -49,6 +49,7 @@ Current versions of all skills. Agents can compare against local versions to che
 | referrals | 2.2.7 | 2026-11-19 |
 | reverse-engineer-marketing | 1.2.0 | 2026-11-19 |
 | revops | 2.2.4 | 2026-11-09 |
+| rtl-hebrew-docs | 1.0.0 | 2026-11-22 |
 | sales-enablement | 2.4.4 | 2026-11-17 |
 | schema | 2.0.5 | 2026-11-09 |
 | seo-audit | 2.2.9 | 2026-11-19 |
@@ -59,6 +60,12 @@ Current versions of all skills. Agents can compare against local versions to che
 | video | 2.4.7 | 2026-11-19 |
 
 ## Recent Changes
+
+### 2.15.0 (2026-11-22)
+
+New skill: **rtl-hebrew-docs**, for Hebrew right-to-left documents as PDF, Word, or slides.
+
+- **rtl-hebrew-docs** (new, 1.0.0): picks the output by what the recipient needs, with HTML (`dir="rtl"`) printed to PDF by headless Chrome as the default, python-docx only for files edited in Word, pptxgenjs for decks, and reportlab with python-bidi as a batch fallback. Covers bidi isolation for prices, dates, and English inside Hebrew, Hebrew font choice and Linux font checks, DD/MM/YYYY dates, no nikud in business text, and a verify step that renders page 1 to an image. Field specs and standard phrasing for price proposals, service contracts, meeting minutes, formal letters, certificates, and reports. Tax invoices and receipts (חשבונית מס, קבלה) are out of scope: they must come from Tax-Authority-approved software, and VAT is a parameter (18% since 1 Jan 2025). Bundles `scripts/html_to_pdf.py` (proposal and certificate templates, Chrome auto-detect or `CHROME_PATH`), `scripts/make_docx.py` (section, paragraph, and run RTL with complex-script size and bold on an A4 page), and `scripts/make_pptx.js`.
 
 ### 2.14.25 (2026-11-19)
 
